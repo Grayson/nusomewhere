@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'NuSomewhere' target in the 'NuSomewhere' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
