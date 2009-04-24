@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D4024570FA16FF0002865FD /* NuInspect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D4024510FA16FC8002865FD /* NuInspect.bundle */; };
+		1D4024600FA17058002865FD /* NuInspect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D40245F0FA17058002865FD /* NuInspect.m */; };
+		1D40246E0FA17199002865FD /* Nu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D40246D0FA17199002865FD /* Nu.framework */; };
+		1D40247D0FA1742A002865FD /* libinject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D40247C0FA1742A002865FD /* libinject.a */; };
+		1D4024860FA17471002865FD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4024850FA17471002865FD /* Carbon.framework */; };
+		1D40254D0FA17516002865FD /* NuInspect.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1D40254C0FA17516002865FD /* NuInspect.nib */; };
+		1D4025550FA17922002865FD /* inspect.nu in Resources */ = {isa = PBXBuildFile; fileRef = 1D4025520FA17917002865FD /* inspect.nu */; };
+		1D40256C0FA17DA3002865FD /* NSObject+Inspect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D40256B0FA17DA3002865FD /* NSObject+Inspect.m */; };
 		1DA13F850FA02B2F004359E3 /* NuSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA13F840FA02B2F004359E3 /* NuSController.m */; };
 		1DA13FC30FA02D9A004359E3 /* NuConsole.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DA13FC20FA02D9A004359E3 /* NuConsole.bundle */; };
 		1DF000380FA1426E00230D5E /* nu-anywhere in Resources */ = {isa = PBXBuildFile; fileRef = 1DF000370FA1426E00230D5E /* nu-anywhere */; };
@@ -18,10 +26,31 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1D4024620FA17060002865FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D4024500FA16FC8002865FD /* NuInspect */;
+			remoteInfo = NuInspect;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1D4024510FA16FC8002865FD /* NuInspect.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuInspect.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4024520FA16FC8002865FD /* NuInspect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NuInspect-Info.plist"; sourceTree = "<group>"; };
+		1D40245E0FA17058002865FD /* NuInspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuInspect.h; sourceTree = "<group>"; };
+		1D40245F0FA17058002865FD /* NuInspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuInspect.m; sourceTree = "<group>"; };
+		1D40246D0FA17199002865FD /* Nu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nu.framework; path = /Library/Frameworks/Nu.framework; sourceTree = "<absolute>"; };
+		1D40247C0FA1742A002865FD /* libinject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libinject.a; path = ../../Programming_examples/nu/examples/NuAnywhere/libinject/libinject.a; sourceTree = SOURCE_ROOT; };
+		1D4024850FA17471002865FD /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		1D40254C0FA17516002865FD /* NuInspect.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = NuInspect.nib; sourceTree = "<group>"; };
+		1D4025520FA17917002865FD /* inspect.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = inspect.nu; sourceTree = "<group>"; };
+		1D40256A0FA17DA3002865FD /* NSObject+Inspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Inspect.h"; sourceTree = "<group>"; };
+		1D40256B0FA17DA3002865FD /* NSObject+Inspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Inspect.m"; sourceTree = "<group>"; };
 		1DA13F830FA02B2F004359E3 /* NuSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuSController.h; sourceTree = "<group>"; };
 		1DA13F840FA02B2F004359E3 /* NuSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuSController.m; sourceTree = "<group>"; };
 		1DA13FC20FA02D9A004359E3 /* NuConsole.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NuConsole.bundle; path = ../../Programming_examples/nu/examples/NuAnywhere/NuConsole/NuConsole.bundle; sourceTree = SOURCE_ROOT; };
@@ -38,6 +67,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D40244F0FA16FC8002865FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D40246E0FA17199002865FD /* Nu.framework in Frameworks */,
+				1D40247D0FA1742A002865FD /* libinject.a in Frameworks */,
+				1D4024860FA17471002865FD /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,9 +92,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1DA13FA20FA02CC8004359E3 /* inject */,
-				1DA13F830FA02B2F004359E3 /* NuSController.h */,
-				1DA13F840FA02B2F004359E3 /* NuSController.m */,
+				1D40245D0FA1703B002865FD /* NuInspect */,
+				1D40245C0FA17033002865FD /* NuSomewhere */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -82,8 +120,36 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* NuSomewhere.app */,
+				1D4024510FA16FC8002865FD /* NuInspect.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1D40245C0FA17033002865FD /* NuSomewhere */ = {
+			isa = PBXGroup;
+			children = (
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				1DA13FA20FA02CC8004359E3 /* inject */,
+				1DA13F830FA02B2F004359E3 /* NuSController.h */,
+				1DA13F840FA02B2F004359E3 /* NuSController.m */,
+			);
+			name = NuSomewhere;
+			sourceTree = "<group>";
+		};
+		1D40245D0FA1703B002865FD /* NuInspect */ = {
+			isa = PBXGroup;
+			children = (
+				1D4024850FA17471002865FD /* Carbon.framework */,
+				1D40247C0FA1742A002865FD /* libinject.a */,
+				1D40246D0FA17199002865FD /* Nu.framework */,
+				1D40245E0FA17058002865FD /* NuInspect.h */,
+				1D40245F0FA17058002865FD /* NuInspect.m */,
+				1D40254C0FA17516002865FD /* NuInspect.nib */,
+				1D4025520FA17917002865FD /* inspect.nu */,
+				1D40256A0FA17DA3002865FD /* NSObject+Inspect.h */,
+				1D40256B0FA17DA3002865FD /* NSObject+Inspect.m */,
+			);
+			name = NuInspect;
 			sourceTree = "<group>";
 		};
 		1DA13FA20FA02CC8004359E3 /* inject */ = {
@@ -101,9 +167,9 @@
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				1D4024520FA16FC8002865FD /* NuInspect-Info.plist */,
 			);
 			name = NuSomewhere;
 			sourceTree = "<group>";
@@ -140,6 +206,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1D4024500FA16FC8002865FD /* NuInspect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D4024550FA16FCC002865FD /* Build configuration list for PBXNativeTarget "NuInspect" */;
+			buildPhases = (
+				1D40244D0FA16FC8002865FD /* Resources */,
+				1D40244E0FA16FC8002865FD /* Sources */,
+				1D40244F0FA16FC8002865FD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NuInspect;
+			productName = NuInspect;
+			productReference = 1D4024510FA16FC8002865FD /* NuInspect.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8D1107260486CEB800E47090 /* NuSomewhere */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "NuSomewhere" */;
@@ -151,6 +234,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1D4024630FA17060002865FD /* PBXTargetDependency */,
 			);
 			name = NuSomewhere;
 			productInstallPath = "$(HOME)/Applications";
@@ -171,15 +255,26 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* NuSomewhere */,
+				1D4024500FA16FC8002865FD /* NuInspect */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D40244D0FA16FC8002865FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4025550FA17922002865FD /* inspect.nu in Resources */,
+				1D40254D0FA17516002865FD /* NuInspect.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4024570FA16FF0002865FD /* NuInspect.bundle in Resources */,
 				1DF0003F0FA1429D00230D5E /* NuInject.framework in Resources */,
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
@@ -191,6 +286,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1D40244E0FA16FC8002865FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4024600FA17058002865FD /* NuInspect.m in Sources */,
+				1D40256C0FA17DA3002865FD /* NSObject+Inspect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,6 +305,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D4024630FA17060002865FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D4024500FA16FC8002865FD /* NuInspect */;
+			targetProxy = 1D4024620FA17060002865FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -222,6 +334,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1D4024530FA16FCC002865FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "NuInspect-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Programming_examples/nu/examples/NuAnywhere/libinject\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-all_load",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = NuInspect;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1D4024540FA16FCC002865FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "NuInspect-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Programming_examples/nu/examples/NuAnywhere/libinject\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-all_load",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = NuInspect;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -298,6 +474,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D4024550FA16FCC002865FD /* Build configuration list for PBXNativeTarget "NuInspect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4024530FA16FCC002865FD /* Debug */,
+				1D4024540FA16FCC002865FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "NuSomewhere" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,5 +1,8 @@
 // !$*UTF8*$!
 {
+	1D4024500FA16FC8002865FD /* NuInspect */ = {
+		activeExec = 0;
+	};
 	1DD767140F9DA88E0049AF52 /* NuSomewhere */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -35,43 +38,13 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	1DF0001D0FA1410400230D5E /* NuSController.m */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.objc;
-		name = NuSController.m;
-		path = /Users/ghansard/Projects/github/NuSomewhere/NuSController.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {439, 952}}";
-			sepNavSelRange = "{1244, 105}";
-			sepNavVisRange = "{1046, 505}";
-		};
-	};
-	1DF000410FA1430300230D5E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "warning: assignment discards qualifiers from pointer target type";
-		fRef = 1DF0001D0FA1410400230D5E /* NuSController.m */;
-		rLen = 1;
-		rLoc = 43;
-		rType = 1;
-	};
-	1DF000420FA1430300230D5E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1DF0001D0FA1410400230D5E /* NuSController.m */;
-		name = "NuSController.m: 44";
-		rLen = 105;
-		rLoc = 1244;
-		rType = 0;
-		vrLen = 382;
-		vrLoc = 1046;
-	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeArchitecture = i386;
 		activeBuildConfigurationName = Release;
 		activeExecutable = 1DD767140F9DA88E0049AF52 /* NuSomewhere */;
 		activeTarget = 8D1107260486CEB800E47090 /* NuSomewhere */;
 		addToTargets = (
-			8D1107260486CEB800E47090 /* NuSomewhere */,
+			1D4024500FA16FC8002865FD /* NuInspect */,
 		);
 		codeSenseManager = 1DD767230F9DA8A00049AF52 /* Code sense */;
 		executables = (
@@ -114,6 +87,30 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					219,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
 			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
@@ -136,12 +133,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 262208056;
-			PBXWorkspaceStateSaveDate = 262208056;
-		};
-		perUserProjectItems = {
-			1DF000410FA1430300230D5E /* PBXTextBookmark */ = 1DF000410FA1430300230D5E /* PBXTextBookmark */;
-			1DF000420FA1430300230D5E /* PBXTextBookmark */ = 1DF000420FA1430300230D5E /* PBXTextBookmark */;
+			PBXPerProjectTemplateStateSaveDate = 262237784;
+			PBXWorkspaceStateSaveDate = 262237784;
 		};
 		sourceControlManager = 1DD767220F9DA8A00049AF52 /* Source Control */;
 		userBuildSettings = {
