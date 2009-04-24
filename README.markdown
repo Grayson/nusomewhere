@@ -16,13 +16,13 @@ F-Script Anywhere also allows for it to be injected into apps automatically.  I'
 
 I'm also considering extending the console in such as way as to make it easy to run Nu files from the console and even automatically whenever it is injected into certain apps.  This is a low-lying priority after extending the console section, but I can see it being useful across multiple sessions.
 
-Notice when apps are quit or launched.
-
 ## Completed (or mostly so)
 
 I decided to avoid procmod problems by authenticating the nu-anywhere script to run as a substitute user whenever you inject Nu into an application.  This means that you'll have to do it repeatedly, but I don't want to get mired down in procmod maintenance.  Run an internet search for "F-Script procmod" and see how that went over.
 
 There's now a nice inspector bundled with the console.  You can inspect objects fairly easily.  Simply use the `inspect` command (see below).
+
+NuSomewhere now updates whenever applications are launched or quit.
 
 ## Using the `inspect` command
 
@@ -46,3 +46,9 @@ There is a solution for this.  You can use `inspect` and add a label at the same
 	(inspect (NSApplication sharedApplication) "app")
 
 The second parameter to `inspect` is a string that represents the label.  This *must* be a string.  When `inspect` works its magic, it'll insert the object into the context using that particular label.
+
+## Thanks
+
+Many, many thanks to Tim Burks.  NuSomewhere basically just extends nu-anywhere which is found in the Nu distribution.  All of the hard work was done for me, I just put a little sugar on top.
+
+Also, many thanks to Jonathan "Wolf" Rentzsch for mach\_*.  mach_inject and its like make stuff like this possible.
