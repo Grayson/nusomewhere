@@ -18,8 +18,8 @@
 
 (function inspect (*arguments)
 	(if (> (*args count) 1) 
-		(_parser setValue:(*args first) forKey:(*args second)) # We've defined a label, put it into the context
-		((NuInspect sharedInstance) inspectObject:(*args first) label:(*args second))
+		(_parser setValue:(eval (*args first)) forKey:(*args second)) # We've defined a label, put it into the context
+		((NuInspect sharedInstance) inspectObject:(eval (*args first)) label:(*args second))
 	(else
 		((NuInspect sharedInstance) inspectObject:obj label:(NuInspect_LabelForObject obj)) )))
 

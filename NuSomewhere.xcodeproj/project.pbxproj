@@ -30,7 +30,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1D4024500FA16FC8002865FD /* NuInspect */;
+			remoteGlobalIDString = 1D4024500FA16FC8002865FD;
 			remoteInfo = NuInspect;
 		};
 /* End PBXContainerItemProxy section */
