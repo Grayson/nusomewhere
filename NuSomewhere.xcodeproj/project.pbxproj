@@ -16,7 +16,6 @@
 		1D4025550FA17922002865FD /* inspect.nu in Resources */ = {isa = PBXBuildFile; fileRef = 1D4025520FA17917002865FD /* inspect.nu */; };
 		1D40256C0FA17DA3002865FD /* NSObject+Inspect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D40256B0FA17DA3002865FD /* NSObject+Inspect.m */; };
 		1DA13F850FA02B2F004359E3 /* NuSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA13F840FA02B2F004359E3 /* NuSController.m */; };
-		1DA13FC30FA02D9A004359E3 /* NuConsole.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DA13FC20FA02D9A004359E3 /* NuConsole.bundle */; };
 		1DF000380FA1426E00230D5E /* nu-anywhere in Resources */ = {isa = PBXBuildFile; fileRef = 1DF000370FA1426E00230D5E /* nu-anywhere */; };
 		1DF0003F0FA1429D00230D5E /* NuInject.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1DF0003A0FA1429600230D5E /* NuInject.framework */; };
 		1DF0FFF50FA0FA7D00230D5E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF0FFF40FA0FA7D00230D5E /* Security.framework */; };
@@ -53,7 +52,6 @@
 		1D40256B0FA17DA3002865FD /* NSObject+Inspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Inspect.m"; sourceTree = "<group>"; };
 		1DA13F830FA02B2F004359E3 /* NuSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuSController.h; sourceTree = "<group>"; };
 		1DA13F840FA02B2F004359E3 /* NuSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuSController.m; sourceTree = "<group>"; };
-		1DA13FC20FA02D9A004359E3 /* NuConsole.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NuConsole.bundle; path = ../../Programming_examples/nu/examples/NuAnywhere/NuConsole/NuConsole.bundle; sourceTree = SOURCE_ROOT; };
 		1DF000370FA1426E00230D5E /* nu-anywhere */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "nu-anywhere"; sourceTree = "<group>"; };
 		1DF0003A0FA1429600230D5E /* NuInject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NuInject.framework; path = ../../Programming_examples/nu/examples/NuAnywhere/NuInject/NuInject.framework; sourceTree = SOURCE_ROOT; };
 		1DF0FFF40FA0FA7D00230D5E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
@@ -156,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				1DF0003A0FA1429600230D5E /* NuInject.framework */,
-				1DA13FC20FA02D9A004359E3 /* NuConsole.bundle */,
 				1DF000370FA1426E00230D5E /* nu-anywhere */,
 			);
 			name = inject;
@@ -278,7 +275,6 @@
 				1DF0003F0FA1429D00230D5E /* NuInject.framework in Resources */,
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				1DA13FC30FA02D9A004359E3 /* NuConsole.bundle in Resources */,
 				1DF000380FA1426E00230D5E /* nu-anywhere in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

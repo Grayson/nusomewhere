@@ -21,4 +21,7 @@
 
 + (id)sharedInstance;
 
+- (id)selection;
+- (void)createInfoForObject:(id)obj;
+
 @end
