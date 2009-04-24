@@ -32,18 +32,29 @@
 	if (idx < 0) return;
 	
 	NSDictionary *app = [self.runningApplications objectAtIndex:idx];
-	[self injectBundleWithPath:[[NSBundle mainBundle] pathForResource:@"NuConsole" ofType:@"bundle"] intoProcess:[[app objectForKey:@"NSApplicationProcessIdentifier"] unsignedIntValue]];
-}
-
-// Stolen directly from the NuInject source for NuAnywhere from Nu's Example folder.
-- (void)injectBundleWithPath:(NSString *)bundlePath intoProcess:(pid_t)pid
-{
-    if ([bundlePath isAbsolutePath] == 0) {
-        bundlePath = [[[[NSFileManager defaultManager] currentDirectoryPath] stringByAppendingPathComponent:bundlePath] stringByStandardizingPath];
-    }
-    mach_error_t err = mach_inject_bundle_pid([bundlePath fileSystemRepresentation], pid);
-    if (err != err_none)
-        NSLog(@"Failure code %x", err);
+	
+	AuthorizationRef myAuthorizationRef;
+	OSStatus status = AuthorizationCreate (NULL, kAuthorizationEmptyEnvironment, kAuthorizationFlagDefaults, &myAuthorizationRef);
+	if (status != noErr) {
+		NSLog(@"%s ERROR %d", _cmd, status);
+	}
+	
+	// Change the current working directory so that Nu knows where to find the bundle and load NuInject.framework.
+	char *cwd = getcwd(nil, 0);
+	chdir([[[NSBundle mainBundle] resourcePath] fileSystemRepresentation]);
+	
+	char *args[3]; // arguments for the mv command
+	args[0] = (char *)[[[NSBundle mainBundle] pathForResource:@"nu-anywhere" ofType:nil] fileSystemRepresentation];
+	args[1] = (char *)[[app objectForKey:@"NSApplicationName"] fileSystemRepresentation];
+	args[2] = NULL;
+	
+	status = AuthorizationExecuteWithPrivileges(myAuthorizationRef, "/usr/local/bin/nush", 0, args, NULL);
+	if (status != noErr) {
+		NSLog(@"%s ERROR 2: %d", _cmd, status);
+	}
+	
+	// Change back to the previous working directory.  I don't think this is necessary, but I figure I might as well.
+	chdir(cwd);
 }
 
 @end

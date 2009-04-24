@@ -35,9 +35,39 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	1DF0001D0FA1410400230D5E /* NuSController.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = NuSController.m;
+		path = /Users/ghansard/Projects/github/NuSomewhere/NuSController.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {439, 952}}";
+			sepNavSelRange = "{1244, 105}";
+			sepNavVisRange = "{1046, 505}";
+		};
+	};
+	1DF000410FA1430300230D5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "warning: assignment discards qualifiers from pointer target type";
+		fRef = 1DF0001D0FA1410400230D5E /* NuSController.m */;
+		rLen = 1;
+		rLoc = 43;
+		rType = 1;
+	};
+	1DF000420FA1430300230D5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1DF0001D0FA1410400230D5E /* NuSController.m */;
+		name = "NuSController.m: 44";
+		rLen = 105;
+		rLoc = 1244;
+		rType = 0;
+		vrLen = 382;
+		vrLoc = 1046;
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeArchitecture = i386;
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 1DD767140F9DA88E0049AF52 /* NuSomewhere */;
 		activeTarget = 8D1107260486CEB800E47090 /* NuSomewhere */;
 		addToTargets = (
@@ -106,8 +136,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 262154992;
-			PBXWorkspaceStateSaveDate = 262154992;
+			PBXPerProjectTemplateStateSaveDate = 262208056;
+			PBXWorkspaceStateSaveDate = 262208056;
+		};
+		perUserProjectItems = {
+			1DF000410FA1430300230D5E /* PBXTextBookmark */ = 1DF000410FA1430300230D5E /* PBXTextBookmark */;
+			1DF000420FA1430300230D5E /* PBXTextBookmark */ = 1DF000420FA1430300230D5E /* PBXTextBookmark */;
 		};
 		sourceControlManager = 1DD767220F9DA8A00049AF52 /* Source Control */;
 		userBuildSettings = {

@@ -8,29 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1DA13F850FA02B2F004359E3 /* NuSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA13F840FA02B2F004359E3 /* NuSController.m */; };
-		1DA13FB50FA02D2A004359E3 /* libinject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA13FB40FA02D2A004359E3 /* libinject.a */; };
-		1DA13FB70FA02D55004359E3 /* libinject.a in Copy frameworks */ = {isa = PBXBuildFile; fileRef = 1DA13FB40FA02D2A004359E3 /* libinject.a */; };
 		1DA13FC30FA02D9A004359E3 /* NuConsole.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DA13FC20FA02D9A004359E3 /* NuConsole.bundle */; };
-		1DD767260F9DBABA0049AF52 /* NuInject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD767250F9DBABA0049AF52 /* NuInject.m */; };
+		1DF000380FA1426E00230D5E /* nu-anywhere in Resources */ = {isa = PBXBuildFile; fileRef = 1DF000370FA1426E00230D5E /* nu-anywhere */; };
+		1DF0003F0FA1429D00230D5E /* NuInject.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1DF0003A0FA1429600230D5E /* NuInject.framework */; };
+		1DF0FFF50FA0FA7D00230D5E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF0FFF40FA0FA7D00230D5E /* Security.framework */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1DA13FC10FA02D5E004359E3 /* Copy frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1DA13FB70FA02D55004359E3 /* libinject.a in Copy frameworks */,
-			);
-			name = "Copy frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -38,13 +24,10 @@
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DA13F830FA02B2F004359E3 /* NuSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuSController.h; sourceTree = "<group>"; };
 		1DA13F840FA02B2F004359E3 /* NuSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuSController.m; sourceTree = "<group>"; };
-		1DA13F960FA02CB3004359E3 /* load_bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = load_bundle.h; path = ../../Programming_examples/nu/examples/NuAnywhere/libinject/objc/load_bundle.h; sourceTree = "<group>"; };
-		1DA13F980FA02CB3004359E3 /* mach_inject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mach_inject.h; path = ../../Programming_examples/nu/examples/NuAnywhere/libinject/objc/mach_inject.h; sourceTree = "<group>"; };
-		1DA13F9A0FA02CB3004359E3 /* mach_inject_bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mach_inject_bundle.h; path = ../../Programming_examples/nu/examples/NuAnywhere/libinject/objc/mach_inject_bundle.h; sourceTree = "<group>"; };
-		1DA13F9C0FA02CB3004359E3 /* mach_inject_bundle_stub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mach_inject_bundle_stub.h; path = ../../Programming_examples/nu/examples/NuAnywhere/libinject/objc/mach_inject_bundle_stub.h; sourceTree = "<group>"; };
-		1DA13FB40FA02D2A004359E3 /* libinject.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libinject.a; path = ../../Programming_examples/nu/examples/NuAnywhere/libinject/libinject.a; sourceTree = SOURCE_ROOT; };
 		1DA13FC20FA02D9A004359E3 /* NuConsole.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NuConsole.bundle; path = ../../Programming_examples/nu/examples/NuAnywhere/NuConsole/NuConsole.bundle; sourceTree = SOURCE_ROOT; };
-		1DD767250F9DBABA0049AF52 /* NuInject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NuInject.m; path = ../../Programming_examples/nu/examples/NuAnywhere/NuInject/objc/NuInject.m; sourceTree = SOURCE_ROOT; };
+		1DF000370FA1426E00230D5E /* nu-anywhere */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "nu-anywhere"; sourceTree = "<group>"; };
+		1DF0003A0FA1429600230D5E /* NuInject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NuInject.framework; path = ../../Programming_examples/nu/examples/NuAnywhere/NuInject/NuInject.framework; sourceTree = SOURCE_ROOT; };
+		1DF0FFF40FA0FA7D00230D5E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -60,7 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				1DA13FB50FA02D2A004359E3 /* libinject.a in Frameworks */,
+				1DF0FFF50FA0FA7D00230D5E /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,25 +86,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1DA13F940FA02CB3004359E3 /* mach_inject */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = mach_inject;
-			path = ../../Programming_examples/nu/examples/NuAnywhere/libinject/objc;
-			sourceTree = SOURCE_ROOT;
-		};
 		1DA13FA20FA02CC8004359E3 /* inject */ = {
 			isa = PBXGroup;
 			children = (
+				1DF0003A0FA1429600230D5E /* NuInject.framework */,
 				1DA13FC20FA02D9A004359E3 /* NuConsole.bundle */,
-				1DA13FB40FA02D2A004359E3 /* libinject.a */,
-				1DA13F940FA02CB3004359E3 /* mach_inject */,
-				1DA13F960FA02CB3004359E3 /* load_bundle.h */,
-				1DA13F980FA02CB3004359E3 /* mach_inject.h */,
-				1DA13F9A0FA02CB3004359E3 /* mach_inject_bundle.h */,
-				1DA13F9C0FA02CB3004359E3 /* mach_inject_bundle_stub.h */,
-				1DD767250F9DBABA0049AF52 /* NuInject.m */,
+				1DF000370FA1426E00230D5E /* nu-anywhere */,
 			);
 			name = inject;
 			sourceTree = "<group>";
@@ -160,6 +130,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1DF0FFF40FA0FA7D00230D5E /* Security.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -176,7 +147,6 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
-				1DA13FC10FA02D5E004359E3 /* Copy frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,9 +180,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF0003F0FA1429D00230D5E /* NuInject.framework in Resources */,
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DA13FC30FA02D9A004359E3 /* NuConsole.bundle in Resources */,
+				1DF000380FA1426E00230D5E /* nu-anywhere in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +196,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				1DD767260F9DBABA0049AF52 /* NuInject.m in Sources */,
 				1DA13F850FA02B2F004359E3 /* NuSController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +227,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Programming_examples/nu/examples/NuAnywhere/NuInject\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -277,6 +252,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Programming_examples/nu/examples/NuAnywhere/NuInject\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NuSomewhere_Prefix.pch;

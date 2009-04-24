@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import <Security/Security.h>
 
 @interface NuSController : NSObject {
 	IBOutlet NSTableView *tableView;
@@ -16,6 +16,5 @@
 @property (retain) NSArray *runningApplications;
 
 - (IBAction)inject:(id)sender;
-- (void)injectBundleWithPath:(NSString *)bundlePath intoProcess:(pid_t)pid;
 
 @end
