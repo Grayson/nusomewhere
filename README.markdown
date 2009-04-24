@@ -14,8 +14,6 @@ info@fromconcentratesoftware.com
 
 F-Script Anywhere also allows for it to be injected into apps automatically.  I'm not as interested in this, but I'd be willing to look into it if there was enough interest in the community.
 
-I'm also considering extending the console in such as way as to make it easy to run Nu files from the console and even automatically whenever it is injected into certain apps.  This is a low-lying priority after extending the console section, but I can see it being useful across multiple sessions.
-
 ## Completed (or mostly so)
 
 I decided to avoid procmod problems by authenticating the nu-anywhere script to run as a substitute user whenever you inject Nu into an application.  This means that you'll have to do it repeatedly, but I don't want to get mired down in procmod maintenance.  Run an internet search for "F-Script procmod" and see how that went over.
@@ -23,6 +21,8 @@ I decided to avoid procmod problems by authenticating the nu-anywhere script to 
 There's now a nice inspector bundled with the console.  You can inspect objects fairly easily.  Simply use the `inspect` command (see below).
 
 NuSomewhere now updates whenever applications are launched or quit.
+
+You can now attach scripts to applications so that they are run automatically whenever NuSomewhere is injected into an application.  See the notes on the `attach` and `detach` commands below.
 
 ## Using the `inspect` command
 
@@ -46,6 +46,18 @@ There is a solution for this.  You can use `inspect` and add a label at the same
 	(inspect (NSApplication sharedApplication) "app")
 
 The second parameter to `inspect` is a string that represents the label.  This *must* be a string.  When `inspect` works its magic, it'll insert the object into the context using that particular label.
+
+## About the `attach` and `detach` commands
+
+If you work with particular applications regularly with NuSomewhere, there may be a lot of boilerplate code that is tiresome to type repeatedly.  Fortunately, NuSomewhere provides a mechanism to automatically run a file when it is injected into an application.  This mechanism is called `attach`.  `attach` is a simple Console command that takes the full path to a Nu file.  Whenever NuSomehwere injects nu-anywhere into an application, it will attempt to load the file attached immediately after injection.
+
+	(attach "/Users/username/Desktop/init.nu")
+
+This is handy for setting up standard objects such as NSApp (`(set NSApp (NSApplication sharedApplication))`) or other common variables or functions.  If you want to include multiple files, simply load them in the attached file.  This is also useful for loading frameworks or other bundles.
+
+If you'd like to remove the attached file, simply use the `detach` command.
+
+	(detach)
 
 ## Thanks
 
