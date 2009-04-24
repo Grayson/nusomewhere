@@ -16,5 +16,6 @@
 @property (retain) NSArray *runningApplications;
 
 - (IBAction)inject:(id)sender;
+- (void)updateRunningApplications;
 
 @end

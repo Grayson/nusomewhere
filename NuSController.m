@@ -14,6 +14,15 @@
 
 - (void)awakeFromNib
 {
+	[self updateRunningApplications];
+	
+	NSNotificationCenter *nc = [[NSWorkspace sharedWorkspace] notificationCenter];
+	[nc addObserver:self selector:@selector(updateRunningApplications) name:NSWorkspaceDidLaunchApplicationNotification object:nil];
+	[nc addObserver:self selector:@selector(updateRunningApplications) name:NSWorkspaceDidTerminateApplicationNotification object:nil];
+}
+
+- (void)updateRunningApplications
+{
 	NSWorkspace *ws = [NSWorkspace sharedWorkspace];
 	NSMutableArray *array = [NSMutableArray array];
 	for (NSDictionary *app in [ws launchedApplications]) {
